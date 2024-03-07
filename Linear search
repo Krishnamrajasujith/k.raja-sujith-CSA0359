@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+	int size;
+	int a[100],serch,i;
+	printf("enter array size :");
+	scanf("%d",&size);
+	printf("enter %d numbers",size);
+	for(i=0;i<size;i++)
+	{
+	scanf("%d",&a[i]);
+	}
+	printf("enter number to serch in array:");
+	scanf("%d",&serch);
+	for(i=0;i<size;i++)
+	{
+		if(a[i]==serch)
+		{
+			printf("%d,present in position %d",serch,i+1);
+		}
+		
+	}
+	
+}
